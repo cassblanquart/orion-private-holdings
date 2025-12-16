@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orion Private Holdings | Discreet Portfolio & Asset Management</title>
+  <meta name="description" content="Orion Private Holdings is a boutique private investment firm providing discreet portfolio and asset management for family offices and high-net-worth individuals." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --panel: #141821;
+      --text: #e8e9ee;
+      --muted: #9aa0b4;
+      --accent: #c9b37e; /* soft gold */
+      --line: #23283a;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #0f1115 0%, #0b0d12 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(15,17,21,0.85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand {
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.08em;
+      font-size: 18px;
+    }
+
+    .nav-links a {
+      margin-left: 28px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .hero {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 24px 96px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: 11px;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 44px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 18px;
+      max-width: 520px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #141821 0%, #11141d 100%);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 24px;
+    }
+
+    .stat h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 28px;
+      color: var(--accent);
+    }
+
+    .stat span { color: var(--muted); font-size: 13px; }
+
+    section {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 96px 24px;
+      border-top: 1px solid var(--line);
+    }
+
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 34px;
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+
+    section p.lead {
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 56px;
+      font-size: 17px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+    }
+
+    .service h3 {
+      font-size: 16px;
+      margin-bottom: 12px;
+      letter-spacing: 0.04em;
+    }
+
+    .service p { color: var(--muted); font-size: 14px; }
+
+    .values {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .values ul {
+      list-style: none;
+    }
+
+    .values li {
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 15px;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 48px;
+    }
+
+    .contact-box p { color: var(--muted); margin-bottom: 12px; }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 48px 24px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .hero { grid-template-columns: 1fr; padding-top: 96px; }
+      .stats { grid-template-columns: 1fr 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .values { grid-template-columns: 1fr; }
+      .contact { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <div class="brand">ORION PRIVATE HOLDINGS</div>
+      <div class="nav-links">
+        <a href="#approach">Approach</a>
+        <a href="#services">Services</a>
+        <a href="#values">Values</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <div class="eyebrow">Private Investment Advisory</div>
+        <h1>Discreet portfolio management for a global private clientele</h1>
+        <p>
+          Orion Private Holdings is a boutique investment and asset management firm
+          serving a select group of family offices and high-net-worth individuals.
+          We operate with discretion, long-term vision, and a global perspective.
+        </p>
+      </div>
+      <div class="card">
+        <p style="color: var(--muted); margin-bottom: 16px;">Firm Snapshot</p>
+        <div class="stats">
+          <div class="stat">
+            <h3>Selective</h3>
+            <span>Client-focused mandate</span>
+          </div>
+          <div class="stat">
+            <h3>Global</h3>
+            <span>International exposure</span>
+          </div>
+          <div class="stat">
+            <h3>Discreet</h3>
+            <span>Confidential by design</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="approach">
+      <h2>Our Approach</h2>
+      <p class="lead">
+        We believe private capital deserves thoughtful stewardship. Our role is not
+        transactional, but advisory — aligning investment strategy with long-term
+        objectives and lifestyle considerations.
+      </p>
+      <div class="grid-3">
+        <div class="service card">
+          <h3>Long-Term Perspective</h3>
+          <p>Capital preservation and measured growth over short-term speculation.</p>
+        </div>
+        <div class="service card">
+          <h3>Bespoke Strategy</h3>
+          <p>Each portfolio is structured individually, never off-the-shelf.</p>
+        </div>
+        <div class="service card">
+          <h3>Global Insight</h3>
+          <p>Periodic international travel to assess opportunities firsthand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <p class="lead">
+        Orion Private Holdings provides a focused range of services designed for
+        private investors seeking clarity, discretion, and professional oversight.
+      </p>
+      <div class="grid-3">
+        <div class="service card">
+          <h3>Portfolio Oversight</h3>
+          <p>Strategic allocation, performance monitoring, and ongoing adjustment.</p>
+        </div>
+        <div class="service card">
+          <h3>Private Investments</h3>
+          <p>Access to select opportunities across real assets and private equity.</p>
+        </div>
+        <div class="service card">
+          <h3>Advisory Services</h3>
+          <p>Independent guidance aligned solely with client interests.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="values">
+      <h2>Values</h2>
+      <div class="values">
+        <ul>
+          <li>Absolute client confidentiality</li>
+          <li>Independent and conflict-free advice</li>
+          <li>Measured decision-making</li>
+          <li>Professional discretion</li>
+        </ul>
+        <p class="lead">
+          We intentionally maintain a limited client base. This allows us to operate
+          with focus, responsiveness, and a high degree of personal involvement in
+          each mandate.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact">
+        <div class="contact-box">
+          <p>Orion Private Holdings</p>
+          <p>Zurich, Switzerland</p>
+          <p>Email: <span style="color: var(--text)">info@oriondevelopments.net</span></p>
+        </div>
+        <div class="card">
+          <p style="color: var(--muted)">
+            New inquiries are considered by referral only. All communications are
+            treated with strict confidentiality.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © Orion Private Holdings. All rights reserved.
+  </footer>
+
+</body>
+</html>
